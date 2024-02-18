@@ -27,6 +27,18 @@
     z-index: 99;
 }
 
+.logo{
+    height: 800px; 
+    margin: 2;
+    max-height: 130px;
+}
+
+.logo img {
+    width: 200%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
 /*** Button Start ***/
 .btn {
     font-weight: 600;
