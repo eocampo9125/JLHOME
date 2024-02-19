@@ -99,7 +99,7 @@
 /*** Topbar Start ***/
 .sticky-top {
     transition: 0.5s;
-    background: var(--bs-white);
+    background: #e6e5e4;
 }
 
 .topbar {
