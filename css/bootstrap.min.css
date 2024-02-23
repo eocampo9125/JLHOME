@@ -6,7 +6,7 @@
  */
 :root {
     --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
+    --bs-indigo: #503459;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
     --bs-red: #dc3545;
@@ -26,6 +26,7 @@
     --bs-danger: #dc3545;
     --bs-light: #F9F8F6;
     --bs-dark: #1C1A1D;
+    --bs-background: #6f42c1;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))

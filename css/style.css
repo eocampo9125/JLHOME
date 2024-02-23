@@ -86,7 +86,7 @@
 
 .btn-primary-outline-0:hover {  
     color: var(--bs-white) !important;
-      background: var(--bs-secondary) !important;
+      background: var(--bs-indigo) !important;
 }
 
 .btn-light-outline-0:hover {
@@ -97,7 +97,7 @@
 /*** Topbar Start ***/
 .sticky-top {
     transition: 0.5s;
-    background: #e6e5e4;
+    background: #fbedff;
 }
 
 .topbar {
