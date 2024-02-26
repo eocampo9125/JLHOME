@@ -606,7 +606,7 @@
 
 /*** testimonial Start ***/
 .testimonial {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/testimonial-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/6.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -684,7 +684,7 @@
 }
 /*** copyright end ***/
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
 html,body{
   margin:0;
   height:120%;
@@ -805,3 +805,10 @@ a{
 .twtr{
   margin-top:100px
 }.btn.twtr:after{content:"\1F426";padding-left:5px}
+
+.aju{
+    text-align: justify;
+}
+.ce{
+    text-align: center;
+}
