@@ -6609,29 +6609,30 @@ fieldset:disabled .btn {
     float: left;
     width: 100%;
     margin-right: -100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform .6s ease-in-out
 }
 
-@media(prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
     .carousel-item {
         transition: none
     }
 }
 
-.carousel-item.active,
 .carousel-item-next,
-.carousel-item-prev {
+.carousel-item-prev,
+.carousel-item.active {
     display: block
 }
 
-.carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
+.active.carousel-item-end,
+.carousel-item-next:not(.carousel-item-start) {
     transform: translateX(100%)
 }
 
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
+.active.carousel-item-start,
+.carousel-item-prev:not(.carousel-item-end) {
     transform: translateX(-100%)
 }
 
@@ -6641,30 +6642,30 @@ fieldset:disabled .btn {
     transform: none
 }
 
-.carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-start,
-.carousel-fade .carousel-item-prev.carousel-item-end {
+.carousel-fade .carousel-item-prev.carousel-item-end,
+.carousel-fade .carousel-item.active {
     z-index: 1;
     opacity: 1
 }
 
-.carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
+.carousel-fade .active.carousel-item-end,
+.carousel-fade .active.carousel-item-start {
     z-index: 0;
     opacity: 0;
     transition: opacity 0s .6s
 }
 
-@media(prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
 
-    .carousel-fade .active.carousel-item-start,
-    .carousel-fade .active.carousel-item-end {
+    .carousel-fade .active.carousel-item-end,
+    .carousel-fade .active.carousel-item-start {
         transition: none
     }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-next,
+.carousel-control-prev {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -6673,27 +6674,24 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: center;
     width: 15%;
-    padding: 0;
     color: #fff;
     text-align: center;
-    background: none;
-    border: 0;
     opacity: .5;
     transition: opacity .15s ease
 }
 
-@media(prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
 
-    .carousel-control-prev,
-    .carousel-control-next {
+    .carousel-control-next,
+    .carousel-control-prev {
         transition: none
     }
 }
 
-.carousel-control-prev:hover,
-.carousel-control-prev:focus,
+.carousel-control-next:focus,
 .carousel-control-next:hover,
-.carousel-control-next:focus {
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
     color: #fff;
     text-decoration: none;
     outline: 0;
@@ -6708,8 +6706,8 @@ fieldset:disabled .btn {
     right: 0
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -6734,34 +6732,31 @@ fieldset:disabled .btn {
     z-index: 2;
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding-left: 0;
     margin-right: 15%;
-    margin-bottom: 1rem;
     margin-left: 15%;
     list-style: none
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel-indicators li {
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 30px;
     height: 3px;
-    padding: 0;
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #fff;
     background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid rgba(0, 0, 0, 0);
-    border-bottom: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     opacity: .5;
     transition: opacity .6s ease
 }
 
-@media(prefers-reduced-motion: reduce) {
-    .carousel-indicators [data-bs-target] {
+@media (prefers-reduced-motion:reduce) {
+    .carousel-indicators li {
         transition: none
     }
 }
@@ -6781,18 +6776,19 @@ fieldset:disabled .btn {
     text-align: center
 }
 
-.carousel-dark .carousel-control-prev-icon,
-.carousel-dark .carousel-control-next-icon {
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
     filter: invert(1) grayscale(100)
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
+.carousel-dark .carousel-indicators li {
     background-color: #000
 }
 
 .carousel-dark .carousel-caption {
     color: #000
 }
+
 
 @keyframes spinner-border {
     to {
