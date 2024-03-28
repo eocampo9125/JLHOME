@@ -850,12 +850,7 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  align-content: flex-start;
-  height:50vw;
-  min-height:400px;
-  max-height:550px;
-  min-width:300px;
-  color:#eee;     
+  align-content: flex-start;    
 }
 .header:after{
   content:"";
