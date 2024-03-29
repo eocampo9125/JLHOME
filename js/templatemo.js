@@ -142,10 +142,10 @@ $('.product-10 a').click(function(){
   return false;
 });
 
-
+//carousel 1
   document.addEventListener("DOMContentLoaded", function() {
     var currentIndex = 0;
-    var images = document.querySelectorAll('#carousel img');
+    var images = document.querySelectorAll('#carousel #carousel2 #carousel3 #carousel4 #carousel5 #carousel6 #carousel7 #carousel8 #carousel9 img');
   
     function showImage(index) {
       images.forEach(img => img.style.display = 'none');
@@ -168,4 +168,7 @@ $('.product-10 a').click(function(){
     document.getElementById('prevBtn').addEventListener('click', prevImage);
   });
 
+
+//carousel 2 quitapelusas
+ 
 });
