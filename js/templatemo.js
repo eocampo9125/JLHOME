@@ -55,7 +55,7 @@ $(document).ready(function() {
     // End roduct detail
     
 
-    //tab-3 
+    //tab-2
     var all_panels = $('.templatemo-accordion > li > ul').hide();
     $('.product-2 a').click(function(){
       var this_src = $(this).children('img').attr('src');
@@ -72,7 +72,7 @@ $(document).ready(function() {
     return false;
   });
 
-
+ //tab-3
   var all_panels = $('.templatemo-accordion > li > ul').hide();
   $('.product-3 a').click(function(){
     var this_src = $(this).children('img').attr('src');
@@ -80,12 +80,32 @@ $(document).ready(function() {
     return false;
   });
 
+  //tab-4
   var all_panels = $('.templatemo-accordion > li > ul').hide();
   $('.product-4 a').click(function(){
     var this_src = $(this).children('img').attr('src');
     $('#product-4').attr('src',this_src);
     return false;
   });
+
+//tab-5
+
+var all_panels = $('.templatemo-accordion > li > ul').hide();
+$('.product-5 a').click(function(){
+  var this_src = $(this).children('img').attr('src');
+  $('#product-5').attr('src',this_src);
+  return false;
+});
+
+//tab-6
+
+var all_panels = $('.templatemo-accordion > li > ul').hide();
+$('.product-6 a').click(function(){
+  var this_src = $(this).children('img').attr('src');
+  $('#product-6').attr('src',this_src);
+  return false;
+});
+
 
   document.addEventListener("DOMContentLoaded", function() {
     var currentIndex = 0;
