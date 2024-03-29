@@ -427,12 +427,12 @@
 
 /*** About Start ***/
 /*** Youtube Video start ***/
-.video {
+/* .video {
     position: relative;
     padding-right: 70px; 
     padding-bottom: 70px;
     border-radius: 10px;
-}
+} */
 
 .video .btn-play {
     position: absolute;
@@ -794,12 +794,12 @@
 /*** testimonial end ***/
 
 /*** Contact Start ***/
-.contact {
+/* .contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/appointment-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .contact .contact-form {
     background: rgba(255, 255, 255, 0.6);
