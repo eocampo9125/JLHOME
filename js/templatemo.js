@@ -53,5 +53,14 @@ $(document).ready(function() {
       return false;
     });
     // End roduct detail
+    
+
+    //tab-3 
+
+    $('.product-2 a').click(function(){
+      var this_src = $(this).children('img').attr('src');
+      $('#product-2').attr('src',this_src);
+      return false;
+    });
 
 });
