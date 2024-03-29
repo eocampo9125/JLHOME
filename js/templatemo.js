@@ -106,6 +106,42 @@ $('.product-6 a').click(function(){
   return false;
 });
 
+//tab-7
+
+var all_panels = $('.templatemo-accordion > li > ul').hide();
+$('.product-7 a').click(function(){
+  var this_src = $(this).children('img').attr('src');
+  $('#product-7').attr('src',this_src);
+  return false;
+});
+
+//tab-8
+
+var all_panels = $('.templatemo-accordion > li > ul').hide();
+$('.product-8 a').click(function(){
+  var this_src = $(this).children('img').attr('src');
+  $('#product-8').attr('src',this_src);
+  return false;
+});
+
+//tab-9
+
+var all_panels = $('.templatemo-accordion > li > ul').hide();
+$('.product-9 a').click(function(){
+  var this_src = $(this).children('img').attr('src');
+  $('#product-9').attr('src',this_src);
+  return false;
+});
+
+//tab-10
+
+var all_panels = $('.templatemo-accordion > li > ul').hide();
+$('.product-10 a').click(function(){
+  var this_src = $(this).children('img').attr('src');
+  $('#product-10').attr('src',this_src);
+  return false;
+});
+
 
   document.addEventListener("DOMContentLoaded", function() {
     var currentIndex = 0;
