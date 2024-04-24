@@ -954,3 +954,9 @@ a{
 .ce{
     text-align: center;
 }
+
+.titu {
+    font-family: system-ui;
+    color: #4f3459;
+    
+}
