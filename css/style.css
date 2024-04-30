@@ -44,8 +44,8 @@
 }
 
 .btn-square {
-    width: 32px;
-    height: 32px;
+    width: 23px;
+    height: 23px;
 }
 
 .btn-sm-square {
@@ -716,7 +716,7 @@
 }
 
 .team .team-item:hover .team-social {
-    top: 20px; 
+    top:8px; 
     left: 20px;
     opacity: 1;
 }

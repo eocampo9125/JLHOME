@@ -3865,6 +3865,11 @@ fieldset:disabled .btn {
     display: none
 }
 
+.collap:not(.show) {
+    display: none
+}
+
+
 .collapsing {
     height: 0;
     overflow: hidden;
