@@ -14,6 +14,8 @@
  }
 /*** Spinner End ***/
 
+
+
 .back-to-top {
     position: fixed;
     right: 30px;
@@ -48,6 +50,13 @@
     height: 23px;
 }
 
+
+.btn-square-navbar {
+    width: 26px;
+    height: 27px;
+}
+
+
 .btn-sm-square {
     width: 34px;
     height: 34px;
@@ -73,6 +82,18 @@
     justify-content: center;
     font-weight: normal;
 }
+
+.btn-square-navbar,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
 
 .btn-primary-outline-0 {
     border: 0;
@@ -725,6 +746,40 @@
     position: relative;
     width: 100%;
 }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #777;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  
 
 .team .team-item .team-img::after {
     content: "";
